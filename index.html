@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> keresés</h1>
+    <div style="text-align: center;">
+       <span>
+         hosszúság   longitude : <input type="text" id="long" value="47.5333">
+        </span>
+        
+      <span>
+          szélesség  latitude: <input type="text" id="lati" value="21.6333">
+        </span>
+
+
+        <button onclick="keres()">keresés</button>
+    </div>
+
+
+
+
+
+    <div id="terkep"></div>
+
+        <h1>óránkénti időjárás előrejelzés</h1>
+    	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>    
+        <h1>max hő előrejelzés</h1>
+        <div id="napiMax"></div>
+
+        <h1>min hő elő</h1>
+        <div id="napiMin"></div>
+
+
+
+
+
+
+    <script src='https://cdn.plot.ly/plotly-3.3.0.min.js'></script>
+    <script src="alap.js"></script>
+</body>
+</html>
